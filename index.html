@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Jodohin! Cek Berapa Persen Kadar Jodohmu!
+    </title>
+    <link rel="stylesheet" type="text/css" href="main-page.css" />
+    <script src="formula.js"></script>
+  </head>
+  <body>
+    <div id="main-page">
+      <p>
+        Cek persentase <br />
+        perjodohan kamu di <br />
+        Jodohin!
+      </p>
+      <div class="main-button">
+        <button class="skewBtn black">
+          <a href="#game-page">Jodohin! Sekarang</a>
+        </button>
+      </div>
+    </div>
+    <div id="game-page">
+      <h1>
+        Ayo kita cek sekarang!
+      </h1>
+      <div id="inputan">
+        <img src="male.png" class="male-img" />
+        <!-- <form>
+          <p>
+            <input type="text" name="male-form" placeholder="Male name here" />
+          </p>
+        </form> -->
+        <!-- ============================== -->
+        <label for="male" class="male">
+          <input type="text" id="male" placeholder="&nbsp;" />
+          <span class="label">Cowok</span>
+          <span class="border"></span>
+        </label>
+        <!-- ============================== -->
+
+        <div class="game-button">
+          <button class="skewBtn black" onclick="jodohin()">
+            Jodohin!
+          </button>
+        </div>
+
+        <!-- <form>
+          <p>
+            <input
+              type="text"
+              name="female-form"
+              placeholder="Female name here"
+            />
+          </p>
+        </form> -->
+        <!-- ================================ -->
+        <label for="female" class="female">
+          <input type="text" id="female" placeholder="&nbsp;" />
+          <span class="label">Cewek</span>
+          <span class="border"></span>
+        </label>
+        <!-- ================================ -->
+        <img src="female.png" class="female-img" />
+      </div>
+      <!-- <div> -->
+      <h1 id="result">
+        Hasil : 0 %
+      </h1>
+      <!-- </div> -->
+    </div>
+    <div class="footer">
+      <div class="kiri">
+        <p>
+          Kirim masukkan untuk tim Jodohin!
+        </p>
+      </div>
+      <div class="kanan">
+        <p style="float: right">
+          Instagram
+        </p>
+        <p style="float: right">
+          Facebook
+        </p>
+        <p style="float: right">
+          Email
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
