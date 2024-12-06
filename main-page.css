@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  }
+  
+  .main-button {
+    display: flex;
+    /* text-align: center; */
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+    padding: 0 4em;
+    grid-template-columns: 40% auto;
+    height: 97vh;
+  }
+  .main-button .skewBtn {
+    width: 180px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    transition: 0.5s;
+    font-size: 16px;
+    border-radius: 5px;
+    /* font-family: "Lato", sans-serif; */
+  }
+  .main-button .skewBtn:hover {
+    border: none;
+    color: white;
+    font-size: 18px;
+    transform: scale(1.1);
+  }
+  /* Buttons */
+  .black {
+    border: 2px solid #a49c9d;
+    color: #a49c9d;
+  }
+  .black:hover {
+    background-color: #a49c9d;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #main-page {
+    background-image: url(bg-main.jpg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    height: 620px;
+    width: 100%;
+  }
+  
+  #main-page p {
+    /* margin-top: 40px; */
+    font-size: 40px;
+    grid-template-columns: 40% auto;
+    padding: 5em 1.5em 0.5em 1.5em;
+    /* margin-left: 35px; */
+    /* border-left: 2px black solid; */
+    /* height: 100%; */
+    /* padding: 30px;
+    width: 100px; */
+  }
+  
+  /* #main-page button {
+    padding-left: 1.5em;
+  } */
+  
+  #game-page {
+    /* max-height: 590px; */
+    background-color: #dedddc;
+    width: 100%;
+    height: 590px;
+  }
+  
+  #game-page h1 {
+    /* grid-template-rows: repeat(1, auto); */
+    text-align: center;
+    font-size: 70px;
+    padding: 0.3em 0 1.2em 0;
+  }
+  
+  #game-page #inputan {
+    width: 100%;
+    height: 150px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #inputan img {
+    width: 150px;
+    height: 150px;
+    margin: 20px 40px;
+  }
+  
+  /* #inputan button {
+    margin: 20px 40px;
+  } */
+  
+  #inputan form {
+    margin: 20px 40px;
+  }
+  
+  #result {
+    margin-top: 0.8em;
+  }
+  
+  .footer {
+    height: 30px;
+    width: 100%;
+    background-color: #a49c9d;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .footer .kiri {
+    /* grid-template-rows: 50% auto; */
+    width: 50%;
+    padding-left: 30px;
+  }
+  .footer .kanan {
+    width: 50%;
+    /* padding-right: 20px; */
+    text-align: right;
+    /* float: left; */
+  }
+  
+  .footer .kanan p {
+    padding: 0 30px 0 30px;
+  }
+  /* ================================================= */
+  
+  .game-button {
+    display: flex;
+    /* text-align: center; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 4em;
+    /* grid-template-columns: 40% auto; */
+    height: 97vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .game-button .skewBtn {
+    width: 180px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    transition: 0.5s;
+    font-size: 16px;
+    border-radius: 5px;
+    /* font-family: "Lato", sans-serif; */
+  }
+  .game-button .skewBtn:hover {
+    border: none;
+    color: white;
+    font-size: 18px;
+    transform: scale(1.1);
+  }
+  /* Buttons */
+  .black {
+    border: 2px solid #a49c9d;
+    color: #a49c9d;
+  }
+  .black:hover {
+    background-color: #a49c9d;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* ======================================= */
+  
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    display: grid;
+    font-family: Avenir;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .male {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+  }
+  .male .label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    font-size: 16px;
+    color: #9098a9;
+    font-weight: 500;
+    transform-origin: 0 0;
+    transition: all 0.2s ease;
+  }
+  .male .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #000;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all 0.15s ease;
+  }
+  .male input {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 12px 0;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #c8ccd4;
+    background: none;
+    border-radius: 0;
+    color: #223254;
+    transition: all 0.15s ease;
+  }
+  .male input:hover {
+    background: rgba(34, 50, 84, 0.03);
+  }
+  .male input:not(:placeholder-shown) + span {
+    color: #5a667f;
+    transform: translateY(-26px) scale(0.75);
+  }
+  .male input:focus {
+    background: none;
+    outline: none;
+  }
+  .male input:focus + span {
+    color: #000;
+    transform: translateY(-26px) scale(0.75);
+  }
+  .male input:focus + span + .border {
+    transform: scaleX(1);
+  }
+  /* ========================== */
+  
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    display: grid;
+    font-family: Avenir;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .female {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 280px;
+  }
+  .female .label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    font-size: 16px;
+    color: #9098a9;
+    font-weight: 500;
+    transform-origin: 0 0;
+    transition: all 0.2s ease;
+  }
+  .female .border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #000;
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    transition: all 0.15s ease;
+  }
+  .female input {
+    -webkit-appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 12px 0;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid #c8ccd4;
+    background: none;
+    border-radius: 0;
+    color: #223254;
+    transition: all 0.15s ease;
+  }
+  .female input:hover {
+    background: rgba(34, 50, 84, 0.03);
+  }
+  .female input:not(:placeholder-shown) + span {
+    color: #5a667f;
+    transform: translateY(-26px) scale(0.75);
+  }
+  .female input:focus {
+    background: none;
+    outline: none;
+  }
+  .female input:focus + span {
+    color: #000;
+    transform: translateY(-26px) scale(0.75);
+  }
+  .female input:focus + span + .border {
+    transform: scaleX(1);
+  }
